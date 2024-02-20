@@ -1,0 +1,73 @@
+# # The config recipe.
+# # https://rasa.com/docs/rasa/model-configuration/
+# recipe: default.v1
+
+# # Configuration for Rasa NLU.
+# # https://rasa.com/docs/rasa/nlu/components/
+# language: vi
+# pipeline:
+#   - name: HFTransformersNLP
+#     model_weights: "vinai/phobert-base"
+#     model_name: "phobert"
+#   - name: vi_tokenizer.VietnameseTokenizer
+#   - name: custom_model.CustomIntentSVM
+
+#   - name: CountVectorsFeaturizer
+#   - name: CountVectorsFeaturizer
+
+#     analyzer: char_wb
+#     min_ngram: 1
+#     max_ngram: 4
+#   - name: DIETClassifier
+#     epochs: 100
+
+# policies:
+# - name: TEDPolicy
+#   max_history: 10
+#   epochs: 20
+# - name: AugmentedMemoizationPolicy
+#   max_history: 6
+# - name: RulePolicy
+#   core_fallback_threshold: 0.4
+#   core_fallback_action_name: "action_default_fallback"
+#   enable_fallback_prediction: true
+# assistant_id: 20240116-005704-principal-grouse
+
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: vi
+pipeline:
+  - name: HFTransformersNLP
+    model_weights: "vinai/phobert-base"
+    model_name: "phobert"
+  - name: vi_tokenizer.VietnameseTokenizer
+  - name: custom_model.CustomIntentSVM
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+    batch_strategy: sequence  # Thêm dòng này để sử dụng GPU
+    tensorboard_log_directory: "./logs"  # Thêm dòng này để ghi log cho TensorBoard
+    tensorboard_log_level: "epoch"  # Thêm dòng này để chỉ ghi log mỗi epoch
+    constrain_similarities: true  # Thêm dòng này để hạn chế độ tương đồng
+    max_training_samples: -1  # Thêm dòng này để sử dụng tất cả các mẫu huấn luyện
+
+policies:
+- name: TEDPolicy
+  max_history: 10
+  epochs: 20
+- name: AugmentedMemoizationPolicy
+  max_history: 6
+- name: RulePolicy
+  core_fallback_threshold: 0.4
+  core_fallback_action_name: "action_default_fallback"
+  enable_fallback_prediction: true
+
+assistant_id: 20240116-005704-principal-grouse

@@ -1,0 +1,307 @@
+version: "2.0"
+nlu:
+- intent: chao_hoi
+  examples: |
+    - chao ad
+    - dạ cho em hỏi
+    - Xin chào
+    - hello
+    - hi
+    - chào
+    - alo
+    - bạn ơi
+    - ad ơi
+    - xin chao
+    - chao
+    - chao ad, có gì mới không?
+    - dạ cho em hỏi về một điều nhỏ
+    - Chào mọi người, có ai online không?
+    - hello cả nhà, hôm nay mình muốn chia sẻ một tin tức
+    - hi, bạn có khỏe không?
+    - chào cậu, hôm nay cậu đã làm gì chưa?
+    - alo, mọi người có nhớ tôi không?
+    - bạn ơi, có chuyện gì vui không?
+    - ad ơi, tôi có thể hỏi bạn một câu hỏi không?
+    - xin chào tất cả, hãy bắt đầu ngày mới với năng lượng tích cực nhé!
+    - chao ad, bạn có thời gian không? Tôi cần trò chuyện một chút.
+    - dạ cho em hỏi, có cách nào để giải quyết vấn đề này không?
+    - Chào mọi người, mình mới tham gia, có ai làm quen không?
+    - hello cả nhà, hôm nay mình muốn chia sẻ một câu chuyện về cuộc sống
+    - chào cậu, bạn cảm thấy thế nào về ngày hôm nay?
+    - alo, mọi người đã ăn trưa chưa? Mình mới ăn xong đây.
+    - bạn ơi, làm thế nào bạn giữ được tinh thần lạc quan như vậy?
+    - ad ơi, có phải bạn là người quản lý không? Tôi có một ý kiến muốn chia sẻ.
+    - xin chào tất cả mọi người, có ai có kinh nghiệm về vấn đề này không?
+    - chào bạn, làm thế nào bạn dành thời gian nghỉ cuối tuần của mình?
+- intent: tam_biet
+  examples: |
+    - good bye
+    - Tạm biệt
+    - Hẹn gặp lại
+    - see you later
+    - good night
+    - bye
+    - bai
+    - tam biet
+- intent: dong_y
+  examples: |
+    - có
+    - có chứ
+    - tất nhiên rồi
+    - tất nhiên
+    - có vẻ thú vị
+    - đúng rồi
+- intent: hoi_ve_bot
+  examples: |
+    - bạn có phải là một chat bot không
+    - bạn có phải là con người không
+    - mình đang nói chuyện với một chat bot phải không
+    - đầu dây bên kia là ai nhỉ
+    - ai đang trả lời cuộc trò chuyện này
+- intent: tu_van_tuyen_sinh
+  examples: |
+    - các phương thức tuyển sinh
+    - tuyển sinh theo phương thức nào
+    - phương thức tuyển sinh
+    - tuyển sinh mấy phương thức
+    - liệt kê các phương thức tuyển sinh
+    - năm nay tuyển sinh mấy phương thức
+    - phương thức được dùng để tuyển sinh năm nay
+- intent: nganh_dao_tao
+  examples: |
+    - các ngành tuyển sinh
+    - tuyển sinh ngành nào
+    - tuyển sinh các ngành
+    - tuyển sinh các ngành nào
+    - các ngành trường đào tạo
+    - các ngành trường tuyển sinh
+    - các ngành tuyển sinh năm nay
+    - tuyển sinh ngành nào năm nay
+    - năm nay tuyển sinh các ngành
+    - năm nay tuyển sinh các ngành nào
+    - các ngành trường đào tạo năm nay
+    - đào tạo các ngành
+    - trường tuyển sinh ngành nào
+    - các ngành được đào tạo tại trường
+    - có bao nhiêu ngành
+    - có bao nhiêu ngành được đào tạo
+    - trường đào tạo bao nhiêu ngành
+    - cho em hỏi trường mình có các ngành nào ạ
+- intent: hoc_bong
+  examples: |
+    - trường có học bổng không
+    - học bổng cho sinh viên
+    - học bổng cho sinh viên như thế nào
+    - tân sinh viên có học bổng không
+    - có học bổng cho sinh viên không
+    - chính sách học bổng cho sinh viên
+    - chính sách học bổng
+    - học bổng của trường
+    - học bổng của trường như thế nào
+    - các loại học bổng của trường
+    - học bổng của trường có hấp dẫn không
+    - cho em hỏi trường mình có học bổng gì không ạ
+    - học bổng của trường ra sao
+- intent: co_so_vat_chat
+  examples: |
+    - các cơ sở chính
+    - trường có bao nhiêu cơ sở
+    - các cơ sở của trường
+    - các cơ sở của trường ở đâu
+    - có bao nhiêu cơ sở tất cả
+    - trường có mấy cơ sở
+    - cơ sở chính
+    - các cơ sở
+    - cơ sở
+    - cơ sở của trường ở đâu
+    - trường có mấy cơ sở ạ
+- intent: hoat_dong
+  examples: |
+    - các hoạt động của trường
+    - trường có những hoạt động nào
+    - hoạt động trong trường
+    - hoạt động cho sinh viên
+    - hoạt động
+    - sự kiện cho sinh viên
+    - các sự kiện của trường
+
+- intent: gioi_thieu
+  examples: |
+    - giới thiệu về trường
+    - giới thiệu sơ lược về trường mình với ạ
+    - trường đại học Điện Lực có gì
+    - đôi nét về trường
+    - trường đại học Điện Lực là trường như thế nào
+    - sơ lược về trường
+    - giới thiệu ngắn gọn
+    - giới thiệu sơ lược
+    - giới thiệu đôi nét
+    - đôi nét ngắn gọn về trường
+    - trường mình là trường như thế nào ạ
+- intent: chuong_trinh_dao_tao
+  examples: |
+    - cho em hỏi về chương trình đào tạo
+    - trường mình có nhiêu chương trình đào tạo ạ
+    - các chương trình đào tạo trường mình tốt không ạ
+    - chương trình đào tạo của mình có cái gì
+    - chương trinh đào tạo của mình ra sao ạ
+    - chương trình đào tạo như thế nào
+    - chương trình đào tạo
+    - đào tạo như thế nào
+    - đào tạo ra sao
+    - đào tạo
+- intent: hoc_phi
+  examples: |
+    - trường mình mỗi kỳ học phí tầm bao nhiêu ạ
+    - học phí mỗi năm bao nhiêu ạ
+    - cho em hỏi học phí của trường
+    - học phí trung bình của trường
+    - học phí
+    - học phí thế nào ạ
+    - học phí đắt không
+    - học phí như thế nào
+    - học phí ra sao
+    - học phí của trường
+# - intent: hp_cntt
+#   examples: |
+#     - học phí ngành CNTT như nào ạ
+#     - ngành CNTT có đắt không
+#     - học phí ngành công nghệ thông tin là bao nhiêu
+#     - cho em hỏi học phí ngành công nghệ thông tin ạ
+#     - ngành công nghệ thông tin mỗi kỳ bao nhiêu ạ
+#     - học phí ngành cntt bao nhiêu 1 kỳ ạ
+#     - học phí ngành cntt bao nhiêu 1 năm ạ
+#     - học phí trung bình 1 học kì ngành CNTT
+#     - 1 học kì ngành CNTT bao nhiêu
+#     - học phí như nào cho 1 học kì
+#     - học phí ổn không
+#     - học phí có đắt không
+#     - 1 kì học phí tốt không
+#     - chi tiết học phí
+#     - review học phí của ngành
+
+# - intent: hp_htd
+#   examples: |
+#       - học phí ngành Kỹ thuật hệ thống điện như nào ạ
+#       - ngành Kỹ thuật hệ thống điện có đắt không
+#       - học phí trung bình 1 học kì ngành Kỹ thuật hệ thống điện
+#       - 1 học kì ngành Kỹ thuật hệ thống điện bao nhiêu
+#       - học phí ngành Kỹ thuật hệ thống điện ổn không
+#       - học phí 1 kì ngành Kỹ thuật hệ thống điện có đắt không
+#       - 1 kì ngành Kỹ thuật hệ thống điện thì học phí tốt không
+#       - chi tiết học phí ngành Kỹ thuật hệ thống điện
+#       - review học phí 1 kì ngành Kỹ thuật hệ thống điện
+#       - 1 kì ngành Kỹ thuật hệ thống điện thì học phí như nào
+
+# - intent: hp_dcnd
+#   examples: |
+#     - học phí ngành Kỹ thuật hệ thống điện như nào ạ
+#       - ngành Kỹ thuật hệ thống điện có đắt không
+#       - học phí trung bình 1 học kì ngành Kỹ thuật hệ thống điện
+#       - 1 học kì ngành Kỹ thuật hệ thống điện bao nhiêu
+#       - học phí ngành Kỹ thuật hệ thống điện ổn không
+#       - học phí 1 kì ngành Kỹ thuật hệ thống điện có đắt không
+#       - 1 kì ngành Kỹ thuật hệ thống điện thì học phí tốt không
+#       - chi tiết học phí ngành Kỹ thuật hệ thống điện
+#       - review học phí 1 kì ngành Kỹ thuật hệ thống điện
+#       - 1 kì ngành Kỹ thuật hệ thống điện thì học phí như nào
+
+# - intent: hp_tdahd
+#   examples: |
+
+# - intent: hp_nd
+#   examples: |
+
+# - intent: hp_dl
+#   examples: |
+
+# - intent: hp_cnng
+#   examples: |
+
+# - intent: hp_qlcn
+#   examples: |
+
+# - intent: hp_qlnl
+#   examples: |
+    
+# - intent: hp_logistics
+#   examples: |
+    
+# - intent: hp_tdah_dktbd
+#   examples: |
+    
+# - intent: hp_dtkmt
+#   examples: |
+    
+# - intent: hp_dtvt
+#   examples: |
+    
+# - intent: hp_ktdt
+#   examples: |
+    
+# - intent: hp_tbdt
+#   examples: |
+    
+# - intent: hp_cnpm
+#   examples: |
+    
+# - intent: hp_httmdt
+#   examples: |
+    
+# - intent: hp_qtanm
+#   examples: |
+    
+# - intent: hp_ai
+#   examples: |
+    
+# - intent: hp_qlmt_cn_dt
+#   examples: |
+    
+# - intent: hp_ckctm
+#   examples: |
+    
+# - intent: hp_ckot
+#   examples: |
+    
+# - intent: hp_cnktcdt
+#   examples: |
+    
+# - intent: hp_xdctd
+#   examples: |
+    
+# - intent: hp_xddd_cn
+#   examples: |
+    
+# - intent: hp_qlda_ctxd
+#   examples: |
+    
+# - intent: hp_cdct
+#   examples: |
+    
+# - intent: hp_qtdn
+#   examples: |
+    
+# - intent: hp_tc_dn
+#   examples: |
+    
+# - intent: hp_nh
+#   examples: |
+    
+# - intent: hp_ktdn
+#   examples: |
+    
+# - intent: hp_ktks
+#   examples: |
+    
+# - intent: hp_kt
+#   examples: |
+    
+# - intent: hp_kd_tmtt
+#   examples: |
+    
+# - intent: hp_qt_dvdl_lh
+#   examples: |
+
+- intent: cam_on
+  examples: |
+    - em cam on a

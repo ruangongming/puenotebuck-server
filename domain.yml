@@ -1,0 +1,822 @@
+version: "2.0"
+
+intents:
+- greet
+- goodbye
+- thank
+- cam_on
+- chao_hoi
+- co_so_vat_chat
+- dong_y
+- nganh_dao_tao
+- chuong_trinh_dao_tao
+- hoat_dong
+- hoc_phi
+- tu_van_tuyen_sinh
+- hoc_bong
+- tam_biet
+- hoi_ve_bot
+- gioi_thieu
+- hp_htd
+
+
+
+responses:
+  utter_greet:
+  - text: "Ê mày khoẻ không?"
+
+  utter_goodbye:
+  - text: "Tạm biệt!"
+
+  utter_tu_van_tuyen_sinh:
+  - text: |-
+      Hiện tại trường Đại học Điện Lực đang tuyển sinh với 4 hình thức:
+       1. Xét tuyển kết quả thi tốt nghiệp THPT năm xét tuyển theo tổ hợp môn.
+       2. Xét tuyển kết quả học bạ đạt 1 trong các tiêu chí:
+       - Tổng điểm trung bình 1 học kì lớp 10 + điểm trung bình 1 học kì lớp 11 + điểm trung bình 1 học kì lớp 12 đạt từ 18 điểm trở lên (được chọn điểm cao nhất trong 2 học kì của mỗi năm học)
+       - Điểm tổ hợp các môn xét tuyển lớp 12 đạt từ 18 điểm trở lên.
+       - Điểm trung bình cả năm lớp 12 đạt từ 6.0 trở lên.
+       3. Xét tuyển kết quả bài thi kiểm tra đánh giá năng lực của ĐHQG TH.HCM và ĐHQG Hà Nội.
+       4. Xét tuyển thẳng, ưu tiên xét tuyển và cử tuyển.
+       (Lưu ý: các ngành thuộc khối Sức khỏe và Giáo dục Mầm non đảm bảo ngưỡng chất lượng đầu vào của Bộ Giáo dục và Đào tạo)
+
+  utter_gioi_thieu:
+  - text: |-
+      Tiền thân của Trường Đại học Điện lực là Trường Kỹ nghệ Thực hành được thành lập năm 1898. Sau đó Trường được tách thành Trường Kỹ thuật I và trường Kỹ thuật II. Tháng 8/1962, Trường Kỹ thuật I đổi tên thành Trường Trung Cao Cơ điện và đến ngày 08/02/1966, Bộ Công nghiệp nặng quyết định tách Trường Trung Cao Cơ điện thành Trường Trung học Kỹ thuật Điện và trường Trung học Cơ khí. Đến tháng 7/1997, Bộ Công nghiệp quyết định đổi tên thành trường Trung học Điện 1. Tháng 04/2000, Bộ Công nghiệp quyết định hợp nhất Trường Trung học Điện 1 và Trường Bồi dưỡng Tại chức thành Trường Trung học Điện 1 thuộc Tổng Công ty Điện lực Việt Nam (nay là Tập đoàn Điện lực Việt Nam). Ngày 26/10/2001, Bộ trưởng Bộ Giáo dục và Đào tạo ký quyết định thành lập Trường Cao đẳng Điện lực trên cơ sở Trường Trung học Điện 1; sau 5 năm xây dựng và phát triển, ngày 19/5/2006, Thủ tướng Chính phủ ký quyết định thành lập Trường Đại học Điện lực trên cơ sở Trường Cao đẳng Điện lực. Thực hiện Nghị quyết 77 NQ-CP của Chính phủ về đổi mới cơ chế đào tạo, trên cơ sở nhiều năm liên tục tự chủ về kinh phí trong các hoạt động của Trường; ngày 01/9/2015 Thủ tướng Chính phủ ký quyết định số 1508/QĐ-TTg phê duyệt Đề án thí điểm đổi mới cơ chế hoạt động của Trường Đại học Điện lực giai đoạn 2015 – 2017; ngày 24/9/2015, Bộ trưởng Bộ Công Thương ký quyết định số 10268/QĐ-BCT về việc chuyển Trường Đại học Điện lực trực thuộc Tập đoàn Điện lực Việt Nam về trực thuộc Bộ Công Thương.
+      Trường Đại học Điện lực là một trường đại học công lập đa cấp, đa ngành có nhiệm vụ chủ yếu là đào tạo nguồn nhân lực có chất lượng cao cung cấp cho Ngành và phục vụ nhu cầu kinh tế xã hội đồng thời là một trung tâm nghiên cứu khoa học - công nghệ hàng đầu của Ngành.
+  
+  utter_chao_hoi:
+  - text: Xin chào,  mình có thể giúp gì?
+
+  utter_tam_biet:
+  - text: Chào bạn hẹn gặp lại bạn, rất vui vì đã hỗ trợ được bạn.
+
+  utter_chuong_trinh_dao_tao:
+  - text: |
+        Lĩnh vực Công nghệ kỹ thuật điện, điện tử:
+          - Mã ngành - 7510301
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Hệ thống điện
+            - Điện công nghiệp & Dân dụng
+            - Tự động hoá Hệ thống điện
+
+        Lĩnh vực Kỹ thuật Nhiệt:
+          - Mã ngành - 7520115
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Nhiệt điện
+            - Điện lạnh
+            - Nhiệt công nghiệp
+
+        Lĩnh vực Công nghệ kỹ thuật Năng lượng:
+          - Mã ngành - 7510403
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Năng lượng tái tạo
+
+        Lĩnh vực Quản lý công nghiệp:
+          - Mã ngành - 7510601
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Quản lý công nghiệp
+
+        Lĩnh vực Quản lý năng lượng:
+          - Mã ngành - 7510602
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Quản lý năng lượng
+
+        Lĩnh vực Logistic và quản lý chuỗi cung ứng:
+          - Mã ngành - 7510605
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Logistics và Quản lý chuỗi cung ứng
+
+        Lĩnh vực Công nghệ kỹ thuật điều khiển và tự động hóa:
+          - Mã ngành - 7510303
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Công nghệ kỹ thuật điều khiển
+            - Tự động hóa và điều khiển thiết bị điện công nghiệp:
+            - Tin học cho điều khiển và tự động hóa
+
+        Lĩnh vực Công nghệ kỹ thuật Điện tử  Viễn thông:
+          - Mã ngành - 7510302
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Điện tử và kỹ thuật máy tính
+            - Điện tử viễn thông
+            - Kỹ thuật điện tử
+            - Thiết bị Điện tử y tế
+
+        Lĩnh vực Công nghệ thông tin:
+          - Mã ngành - 7480201
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Công nghệ phần mềm
+            - Hệ thống thương mại điện tử
+            - Quản trị và An ninh mạng
+            - Trí tuệ nhân tạo và thị giác máy tính
+
+        Lĩnh vực Công nghệ kỹ thuật môi trường:
+          - Mã ngành - 7510406
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Quản lý môi trường công nghiệp và đô thị:
+
+        Lĩnh vực Công nghệ kỹ thuật cơ khí:
+          - Mã ngành - 75102101
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Cơ khí chế tạo máy
+            - Cơ khí ô tô
+
+        Lĩnh vực Công nghệ kỹ thuật cơ điện tử:
+          - Mã ngành - 7510203
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Công nghệ kỹ thuật cơ điện tử
+
+        Lĩnh vực Công nghệ kỹ thuật công trình xây dựng:
+          - Mã ngành - 7510102
+          - Bằng tốt nghiệp được cấp - Kỹ sư
+          - Thời gian đào tạo - 4,5 năm
+          - Chuyên ngành:
+            - Xây dựng công trình Điện
+            - Xây dựng Dân dụng và Công nghiệp
+            - Quản lý dự án và công trình xây dựng
+            - Cơ điện công trình
+
+        Lĩnh vực Quản trị kinh doanh:
+          - Mã ngành - 7340101
+          - Bằng tốt nghiệp được cấp - Cử nhân
+          - Thời gian đào tạo - 4 năm
+          - Chuyên ngành:
+            - Quản trị doanh nghiệp
+            - Quản trị kinh doanh khách sạn du lịch
+
+        Lĩnh vực Tài chính  ngân hàng:
+          - Mã ngành - 7340201
+          - Bằng tốt nghiệp được cấp - Cử nhân
+          - Thời gian đào tạo - 4 năm
+          - Chuyên ngành:
+            - Tài chính doanh nghiệp
+            - Ngân hàng
+
+        Lĩnh vực Kế toán:
+          - Mã ngành - 7340301
+          - Bằng tốt nghiệp được cấp - Cử nhân
+          - Thời gian đào tạo - 4 năm
+          - Chuyên ngành:
+            - Kế toán doanh nghiệp
+            - Kế toán và kiểm soát
+
+        Lĩnh vực Kiểm toán:
+          - Mã ngành - 7340302
+          - Bằng tốt nghiệp được cấp - Cử nhân
+          - Thời gian đào tạo - 4 năm
+          - Chuyên ngành:
+            - Kiểm toán
+
+        Lĩnh vực Thương mại điện tử:
+          - Mã ngành - 7340122
+          - Bằng tốt nghiệp được cấp - Cử nhân
+          - Thời gian đào tạo - 4 năm
+          - Chuyên ngành:
+            - Kinh doanh thương mại trực tuyến
+
+        Lĩnh vực Quản trị dịch vụ du lich và lữ hành:
+          - Mã ngành - 7810103
+          - Bằng tốt nghiệp được cấp - Cử nhân
+          - Thời gian đào tạo - 4 năm
+          - Chuyên ngành:
+            - Quản trị dịch vụ du lịch và Lữ hành
+    # Các phần tiếp theo của utter_chuong_trinh_dao_tao nếu có...
+
+
+  utter_hoc_phi:
+  - text: Học phí trung bình của trường Đại học Điện Lực dao động từ 11.300.000 đến 16.900.000 đồng cho 1 học kì. Ngành có mức học phí thấp nhất là Kế toán (11.360.000 đồng), ngành cao nhất là Công Nghệ Thông Tin (19.984.000 đồng)
+
+  utter_nganh_dao_tao:
+  - text: |-
+        Có tất cả 38 chuyên ngành được đào tạo tại trường Đại học Điện Lực:
+            Ngành Hệ thống điện
+            Ngành Điện công nghiệp & Dân dụng 
+            Ngành Tự động hoá Hệ thống điện
+            Ngành Nhiêt điện
+            Ngành Điện lạnh
+            Ngành Nhiệt công nghiệp
+            Ngành Năng lượng tái tạo
+            Ngành Quản lý công nghiệp
+            Ngành Quản lý năng lượng
+            Ngành Logistics và Quản lý chuỗi cung ứng
+            Ngành Công nghệ kỹ thuật điều khiển
+            Ngành Tự động hóa và điều khiển thiết bị điện công nghiệp 
+            Ngành Tin học cho điều khiển và tự động hóa
+            Ngành Điện tử và kỹ thuật máy tính
+            Ngành Điện tử viễn thông
+            Ngành Kỹ thuật điện tử
+            Ngành Thiết bị Điện tử y tế
+            Ngành Công nghệ phần mềm
+            Ngành Hệ thống thương mại điện tử
+            Ngành Quản trị và An ninh mạng
+            Ngành Trí tuệ nhân tạo và thị giác máy tính
+            Ngành Quản lý môi trường công nghiệp và đô thị
+            Ngành Cơ khí chế tạo máy
+            Ngành Cơ khí ô tô
+            Ngành Công nghệ kỹ thuật cơ điện tử
+            Ngành Xây dựng công trình Điện
+            Ngành Xây dựng Dân dụng và Công nghiệp
+            Ngành Quản lý dự án và công trình xây dựng
+            Ngành Cơ điện công trình
+            Ngành Quản trị doanh nghiệp
+            Ngành Quản trị kinh doanh khách sạn du lịch
+            Ngành Tài chính doanh nghiệp
+            Ngành Ngân hàng
+            Ngành Kế toán doanh nghiệp
+            Ngành Kế toán và kiểm soát
+            Ngành Kiểm toán
+            Ngành Kinh doanh thương mại trực tuyến
+            Ngành Quản trị dịch vụ du lịch và Lữ hành
+
+#Giới thiệu về ngành
+  utter_gt_htd:
+  - text: "Hệ thống điện là lĩnh vực nghiên cứu và quản lý về cấu trúc và vận hành của các hệ thống điện, bao gồm cả mạng lưới và thiết bị điện."
+
+  utter_gt_dcnd:
+  - text: "Ngành Điện công nghiệp & Dân dụng áp dụng kiến thức điện vào lĩnh vực công nghiệp và đời sống hàng ngày, tập trung vào ứng dụng trong các ngành sản xuất và cuộc sống hàng ngày."
+
+  utter_gt_tdahd:
+  - text: "Ngành Tự động hóa Hệ thống điện nghiên cứu về tự động hóa trong quản lý và điều khiển hệ thống điện, kết hợp công nghệ thông tin để tối ưu hóa quy trình."
+
+  utter_gt_nd:
+  - text: "Ngành Nhiệt điện tập trung vào sản xuất điện từ nhiệt, bao gồm cả nghiên cứu về các loại nguồn nhiệt khác nhau."
+
+  utter_gt_dl:
+  - text: "Ngành Điện lạnh đào tạo về công nghệ và quản lý hệ thống điều hòa nhiệt độ, hệ thống điều khiển và bảo trì."
+
+  utter_gt_cnng:
+  - text: "Ngành Nhiệt công nghiệp nghiên cứu về sử dụng nhiệt trong quá trình sản xuất, bao gồm cả quản lý và tối ưu hóa hiệu suất nhiệt."
+
+  utter_gt_qlcn:
+  - text: "Ngành Quản lý công nghiệp phát triển kỹ năng quản lý trong môi trường sản xuất công nghiệp, từ quản lý nhân sự đến quản lý chất lượng."
+
+  utter_gt_qlnl:
+  - text: "Ngành Quản lý năng lượng tối ưu hóa sử dụng năng lượng trong các hệ thống sản xuất, học cách giảm thiểu lãng phí và tăng hiệu suất."
+
+
+  utter_gt_cnktdk:
+  - text: "Ngành Công nghệ kỹ thuật điều khiển nghiên cứu về các công nghệ mới trong lĩnh vực điều khiển và quản lý hệ thống."
+
+  utter_gt_tdah_dktbd:
+  - text: "Ngành Tự động hóa và điều khiển thiết bị điện công nghiệp học về tự động hóa và điều khiển trong sản xuất công nghiệp, bao gồm cả lập trình và thiết kế hệ thống."
+
+  utter_gt_dtkmt:
+  - text: "Ngành Điện tử và kỹ thuật máy tính kết hợp kiến thức về điện tử và máy tính, học về thiết kế và phát triển các thiết bị và hệ thống."
+
+  utter_gt_dtvt:
+  - text: "Ngành Điện tử viễn thông tập trung vào việc truyền thông thông tin bằng các công nghệ điện tử, bao gồm cả viễn thông di động và truyền hình."
+
+  utter_gt_ktdt:
+  - text: "Ngành Kỹ thuật điện tử nghiên cứu và phát triển các thiết bị điện tử, từ vi mạch nhỏ đến hệ thống phức tạp."
+
+  utter_gt_tbdt:
+      - text: "Ngành Thiết bị Điện tử y tế tập trung vào phát triển các thiết bị điện tử sử dụng trong lĩnh vực y tế, như máy theo dõi sức khỏe và thiết bị hỗ trợ."
+
+  utter_gt_cnpm:
+  - text: "Ngành Công nghệ phần mềm học về phát triển và quản lý phần mềm, từ việc thiết kế đến triển khai và bảo trì."
+
+  utter_gt_httmdt:
+  - text: "Ngành Hệ thống thương mại điện tử nghiên cứu về phương thức và hệ thống thương mại điện tử, bao gồm cả quản lý đơn hàng và thanh toán trực tuyến."
+
+  utter_gt_qtanm:
+  - text: "Ngành Quản trị và An ninh mạng tập trung vào bảo vệ thông tin và hệ thống mạng, cũng như quản lý và tối ưu hóa mạng."
+
+  utter_gt_ai:
+  - text: "Ngành Trí tuệ nhân tạo và thị giác máy tính nghiên cứu về việc phát triển máy tính có khả năng học và nhận biết hình ảnh và thông tin."
+
+  utter_gt_qlmt_cn_dt:
+  - text: "Ngành Quản lý môi trường công nghiệp và đô thị nghiên cứu và phát triển các phương pháp quản lý và bảo vệ môi trường trong lĩnh vực công nghiệp và đô thị."
+
+  utter_gt_ckctm:
+  - text: "Ngành Cơ khí chế tạo máy tập trung vào thiết kế và sản xuất các thiết bị cơ khí và máy móc, từ máy công cụ đến máy sản xuất."
+
+  utter_gt_ckot:
+  - text: "Ngành Cơ khí ô tô nghiên cứu và phát triển các công nghệ và thiết kế liên quan đến ô tô và xe máy."
+
+  utter_gt_cnktcdt:
+  - text: "Ngành Công nghệ kỹ thuật cơ điện tử kết hợp kiến thức về cơ khí và điện tử, học về thiết kế và bảo trì các hệ thống cơ điện tử."
+
+  utter_gt_xdctd:
+  - text: "Ngành Xây dựng công trình Điện nghiên cứu và phát triển các phương pháp xây dựng và bảo trì hệ thống điện trong các công trình lớn."
+
+  utter_gt_xddd_cn:
+  - text: "Ngành Xây dựng Dân dụng và Công nghiệp tập trung vào quy trình xây dựng cho cả dân dụng và công nghiệp, từ nhà ở đến nhà máy."
+
+  utter_gt_qlda_ctxd:
+  - text: "Ngành Quản lý dự án và công trình xây dựng nghiên cứu và áp dụng kiến thức quản lý vào lĩnh vực xây dựng, từ lập kế hoạch đến triển khai."
+
+  utter_gt_cdct:
+  - text: "Ngành Cơ điện công trình nghiên cứu và phát triển các công nghệ và quy trình trong xây dựng các công trình có liên quan đến cơ điện."
+
+  utter_gt_qtdn:
+  - text: "Ngành Quản trị doanh nghiệp học về quản lý toàn diện trong môi trường doanh nghiệp, từ quản lý nhân sự đến quản lý chiến lược."
+
+  utter_gt_tc_dn:
+  - text: "Ngành Tài chính doanh nghiệp nghiên cứu về quản lý và tối ưu hóa tài chính trong doanh nghiệp, từ quản lý rủi ro đến đầu tư."
+
+  utter_gt_nh:
+  - text: "Ngành Ngân hàng nghiên cứu và áp dụng kiến thức về tài chính và quản lý rủi ro trong lĩnh vực ngân hàng và tài chính."
+
+  utter_gt_ktdn:
+  - text: "Ngành Kế toán doanh nghiệp học về việc thu thập, phân tích và báo cáo thông tin tài chính của doanh nghiệp."
+
+  utter_gt_ktks:
+  - text: "Ngành Kế toán và kiểm soát nghiên cứu về các quy trình kiểm soát nội bộ và kiểm toán trong lĩnh vực kế toán."
+
+  utter_gt_kt:
+  - text: "Ngành Kiểm toán nghiên cứu và thực hiện kiểm toán độc lập của tài chính và quản lý trong doanh nghiệp."
+
+  utter_gt_kd_tmtt:
+  - text: "Ngành Kinh doanh thương mại trực tuyến học về kinh doanh qua môi trường trực tuyến, bao gồm cả quản lý website và chiến lược tiếp thị trực tuyến."
+
+  utter_gt_qt_dvdl_lh:
+  - text: "Ngành Quản trị dịch vụ du lịch và Lữ hành tập trung vào quản lý và phát triển các dịch vụ du lịch, từ lữ hành đến quảng bá du lịch."
+
+
+# Học phần
+  utter_hp_htd:
+    - text: "Ngành Hệ thống điện có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 10 triệu đồng."
+
+  utter_hp_dcnd:
+    - text: "Ngành Điện công nghiệp & Dân dụng có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 11 triệu đồng."
+
+  utter_hp_tdahd:
+    - text: "Ngành Tự động hóa Hệ thống điện có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 10.5 triệu đồng."
+
+  utter_hp_nd:
+    - text: "Ngành Nhiệt điện có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 10 triệu đồng."
+
+  utter_hp_dl:
+    - text:  "Ngành Điện lạnh có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 11 triệu đồng."
+
+  utter_hp_cnng:
+    - text: "Ngành Nhiệt công nghiệp có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 10.5 triệu đồng."
+
+  utter_hp_qlcn:
+    - text: "Ngành Quản lý công nghiệp có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 11 triệu đồng."
+
+  utter_hp_qlnl:
+    - text: "Ngành Quản lý năng lượng có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 10.5 triệu đồng."
+
+  utter_hp_logistics:
+    - text: "Ngành Logistics và Quản lý chuỗi cung ứng có thời gian đào tạo là 4 năm, học phí trung bình một kỳ khoảng 11 triệu đồng."
+
+  utter_hp_tdah_dktbd:
+    - text: Ngành Quan hệ công chúng với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 16 triệu đồng.
+
+  utter_hp_dtkmt:
+    - text: Ngành Quản trị kinh doanh với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 12 triệu đồng.
+
+  utter_hp_dtvt:
+    - text: Ngành Marketing với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 16 triệu đồng.
+
+  utter_hp_ktdt:
+    - text: Ngành Kinh doanh quốc tế là ngành mới với thời gian đào tạo là 3 năm, chưa có mức học phí cụ thể.
+
+  utter_hp_tbdt:
+    - text: Ngành Điều dưỡng với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 12 triệu đồng.
+
+  utter_hp_cnpm:
+    - text: Ngành Kỹ thuật xét nghiệm y học với thời gian đào tạo là 4 năm, học phí trung bình một kì khoảng 13 triệu đồng.
+
+  utter_hp_httmdt:
+    - text: Ngành Quản lí bệnh viện là ngành học dự kiến, với thời gian đào tạo là 4 năm, chưa có mức học phí cụ thể.
+
+  utter_hp_qtanm:
+    - text: Ngành Kỹ thuật phục hồi chức năng với thời gian đào tạo là 4 năm, chưa có mức học phí cụ thể.
+
+  utter_hp_ai:
+    - text: Ngành Thanh nhạc với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 13 triệu đồng.
+
+  utter_hp_qlmt_cn_dt:
+    - text: Ngành Piano với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 13 triệu đồng.
+
+  utter_hp_ckctm:
+    - text: Ngành Đạo diễn điện ảnh truyền hình với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 13 triệu đồng.
+
+  utter_hp_ckot:
+    - text: Ngành Quay phim với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 14 triệu đồng.
+
+  utter_hp_cnktcdt:
+    - text: Ngành Thiết kế đồ họa với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 11 triệu đồng.
+
+  utter_hp_xdctd:
+    - text: Ngành Tiếng Việt và văn hóa Việt Nam với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 13 triệu đồng.
+
+  utter_hp_xddd_cn:
+    - text: Ngành Ngôn ngữ Anh với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 13 triệu đồng.
+
+  utter_hp_qlda_ctxd:
+    - text: Ngành Ngôn ngữ Trung Quốc với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 13 triệu đồng.
+
+  utter_hp_cdct:
+    - text: Ngành Thương mại điện tử với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 15 triệu đồng.
+
+  utter_hp_qtdn:
+    - text: Ngành Tài chính - Ngân hàng với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 12 triệu đồng.
+
+  utter_hp_tc_dn:
+    - text: Ngành Quản trị nhân lực với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 12 triệu đồng.
+
+  utter_hp_nh:
+    - text: Ngành Luật kinh tế với thời gian đào tạo là 3 năm, học phí trung bình một kì khoảng 12 triệu đồng.
+
+  utter_hp_ktdn:
+    - text: Ngành Công nghệ sinh học với thời gian đào tạo là 3.5 năm, học phí trung bình một kì khoảng 11 triệu đồng.
+
+  utter_hp_ktks:
+    - text: Ngành Mạng máy tính và truyền thông dữ liệu là ngành mới với thời gian đào tạo là 3 - 3.5 năm, chưa có mức học phí cụ thể.
+
+  utter_hp_kt:
+    - text: Ngành Kỹ thuật phần mềm là ngành mớimới với thời gian đào tạo là 3 - 3.5 năm, chưa có mức học phí cụ thể.
+
+  utter_hp_kd_tmtt:
+    - text: Ngành Công nghệ kỹ thuật cơ điện tử với thời gian đào tạo là 3.5 - 4 năm, học phí trung bình một kì khoảng 11 triệu đồng.
+
+  utter_hp_qt_dvdl_lh:
+    - text: Ngành Công nghệ kỹ thuật ô tô với thời gian đào tạo là 3.5 - 4 năm, học phí trung bình một kì khoảng 11 triệu đồng.
+  ######
+
+  ####
+  utter_hoc_bong:
+    - text: |-
+        - SV hoàn thành tất cả các học phần đã đăng ký trong năm học (gồm cả 3 học kỳ trong năm học);
+        - Điểm trung bình chung của năm học đặt từ 2.5 trở lên theo thang điểm 4;
+        - SV tổng số tính chỉ tích lũy từ 30 tín chỉ trở lên trong năm học, riêng với sinh viên năm cuối tích lũy 20 tín chỉ trở lên trong năm học;
+        - SV không có điểm thi kêt thúc môn học và và điểm trung bình của kết thúc học phần dưới 5 điểm trong năm 
+        - Kết quả rèn luyện từ loại khá trở lên
+
+  utter_chnn_htd:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Cơ hội nghề nghiệp trong Hệ thống điện đặc trưng bởi việc thiết kế, quản lý và bảo trì các hệ thống điện phức tạp, từ lưới điện đến thiết bị điện.
+
+  utter_chnn_dcnd:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Ngành Điện công nghiệp & Dân dụng mở ra cơ hội làm việc trong lĩnh vực công nghiệp và dân dụng, từ quản lý dự án đến bảo trì hệ thống điện.
+
+  utter_chnn_tdahd:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Tự động hóa Hệ thống điện tạo cơ hội cho việc phát triển và triển khai các hệ thống tự động hóa, đặc biệt là trong quản lý và điều khiển hệ thống điện.
+
+  utter_chnn_nd:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Cơ hội nghề nghiệp trong Nhiệt điện nằm ở việc nghiên cứu và phát triển các phương pháp sản xuất điện từ nhiệt, từ đó tối ưu hóa hiệu suất
+
+  utter_chnn_dl:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Ngành Điện lạnh mở ra cơ hội làm việc trong lĩnh vực quản lý và bảo trì hệ thống điều hòa nhiệt độ và điện lạnh.
+
+  utter_chnn_cnng:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Nhiệt công nghiệp cung cấp cơ hội nghề nghiệp để nghiên cứu và ứng dụng nhiệt trong sản xuất, hướng tới tối ưu hóa hiệu suất nhiệt.
+
+  utter_chnn_qlcn:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Quản lý công nghiệp mở ra cơ hội để bạn phát triển kỹ năng quản lý trong môi trường sản xuất, từ quản lý nhân sự đến quản lý chất lượng.
+
+  utter_chnn_qlnl:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Quản lý năng lượng mang lại cơ hội để tối ưu hóa sử dụng năng lượng trong các hệ thống sản xuất, giúp giảm thiểu lãng phí và tăng hiệu suất.
+
+  utter_chnn_logistics:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Logistics và Quản lý chuỗi cung ứng mở cánh cửa cho cơ hội làm việc trong lĩnh vực quản lý vận chuyển, lưu kho và chuỗi cung ứng.
+
+  utter_chnn_cnktdk:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Công nghệ kỹ thuật điều khiển tạo cơ hội để nghiên cứu và áp dụng các công nghệ mới trong lĩnh vực điều khiển và quản lý hệ thống.
+
+  utter_chnn_tdah_dktbd:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Tự động hóa và điều khiển thiết bị điện công nghiệp mở ra cơ hội làm việc trong việc tự động hóa và điều khiển trong sản xuất công nghiệp.
+
+  utter_chnn_dtkmt:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Điện tử và kỹ thuật máy tính mang lại cơ hội để thiết kế và phát triển các thiết bị và hệ thống điện tử, từ vi mạch nhỏ đến hệ thống phức tạp.
+
+  utter_chnn_dtvt:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Điện tử viễn thông tạo cơ hội cho bạn tham gia vào lĩnh vực truyền thông thông tin bằng các công nghệ điện tử, từ viễn thông di động đến truyền hình.
+
+  utter_chnn_ktdt:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Kỹ thuật điện tử mở ra cơ hội để nghiên cứu và phát triển các thiết bị điện tử, từ vi mạch nhỏ đến hệ thống phức tạp.
+
+  utter_chnn_tbdt:
+    - text: |-
+        Cơ hội nghề nghiệp:
+        • Thiết bị Điện tử y tế cung cấp cơ hội để bạn tham gia vào lĩnh vực phát triển các thiết bị điện tử sử dụng trong lĩnh vực y tế.
+
+  utter_chnn_cnpm:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Công nghệ phần mềm mang lại cơ hội để bạn tham gia vào quá trình phát triển và quản lý phần mềm, từ việc thiết kế đến triển khai và bảo trì.
+
+  utter_chnn_httmdt:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Hệ thống thương mại điện tử tạo cơ hội để bạn nghiên cứu về phương thức và hệ thống thương mại điện tử, bao gồm cả quản lý đơn hàng và thanh toán trực tuyến.
+
+  utter_chnn_qtanm:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Quản trị An ninh mạng mang lại cơ hội để bạn bảo vệ thông tin và hệ thống mạng, cũng như tham gia vào quản lý và tối ưu hóa mạng.
+
+  utter_chnn_ai:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Trí tuệ nhân tạo và thị giác máy tính mở ra cơ hội để nghiên cứu và phát triển máy tính có khả năng học và nhận biết hình ảnh và thông tin.    
+
+  utter_chnn_qlmt_cn_dt:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • LQuản lý môi trường công nghiệp và đô thị mang lại cơ hội để bạn nghiên cứu và phát triển các phương pháp quản lý và bảo vệ môi trường.
+
+  utter_chnn_ckctm:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Cơ hội nghề nghiệp trong Cơ khí chế tạo máy tập trung vào thiết kế và sản xuất các thiết bị cơ khí và máy móc, từ máy công cụ đến máy sản xuất.
+
+  utter_chnn_ckot:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Cơ hội nghề nghiệp trong Cơ khí ô tô nghiên cứu và phát triển các công nghệ và thiết kế liên quan đến ô tô và xe máy.
+
+  utter_chnn_cnktcdt:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Công nghệ kỹ thuật cơ điện tử mang lại cơ hội để nghiên cứu và áp dụng kiến thức về cơ khí và điện tử, học về thiết kế và bảo trì các hệ thống cơ điện tử.
+
+  utter_chnn_xdctd:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Xây dựng công trình Điện mang lại cơ hội để nghiên cứu và phát triển các phương pháp xây dựng và bảo trì hệ thống điện trong các công trình lớn.
+
+  utter_chnn_xddd_cn:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Cơ hội nghề nghiệp trong Xây dựng Dân dụng và Công nghiệp tập trung vào quy trình xây dựng cho cả dân dụng và công nghiệp, từ nhà ở đến nhà máy.
+
+  utter_chnn_qlda_ctxd:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Quản lý dự án và công trình xây dựng mang lại cơ hội để bạn nghiên cứu và áp dụng kiến thức quản lý vào lĩnh vực xây dựng, từ lập kế hoạch đến triển khai.
+
+  utter_chnn_cdct:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Cơ hội nghề nghiệp trong Cơ điện công trình nghiên cứu và phát triển các công nghệ và quy trình trong xây dựng các công trình có liên quan đến cơ điện.
+
+  utter_chnn_qtdn:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Quản trị doanh nghiệp mang lại cơ hội để bạn học về quản lý toàn diện trong môi trường doanh nghiệp, từ quản lý nhân sự đến quản lý chiến lược.
+
+  utter_chnn_qtkd_ksdl:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Quản trị kinh doanh khách sạn du lịch tạo cơ hội cho việc quản lý doanh nghiệp trong lĩnh vực khách sạn và du lịch, từ dịch vụ đến tiếp thị.
+
+  utter_chnn_tc_dn:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Cơ hội nghề nghiệp trong Tài chính doanh nghiệp nghiên cứu về quản lý và tối ưu hóa tài chính trong doanh nghiệp, từ quản lý rủi ro đến đầu tư.
+
+  utter_chnn_nh:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Ngành Ngân hàng mang lại cơ hội để bạn nghiên cứu và áp dụng kiến thức về tài chính và quản lý rủi ro trong lĩnh vực ngân hàng và tài chính.
+
+  utter_chnn_ktdn:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Cơ hội nghề nghiệp trong Kế toán doanh nghiệp làm việc với việc thu thập, phân tích và báo cáo thông tin tài chính của doanh nghiệp
+
+  utter_chnn_ktks:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Kế toán và kiểm soát mang lại cơ hội để nghiên cứu về các quy trình kiểm soát nội bộ và kiểm toán trong lĩnh vực kế toán.
+
+  utter_chnn_kt:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Kiểm toán mang lại cơ hội để nghiên cứu và thực hiện kiểm toán độc lập của tài chính và quản lý trong doanh nghiệp.
+
+  utter_chnn_kd_tmtt:
+    - text: |-
+        Cơ hội nghề nghiệp: 
+        • Kinh doanh thương mại trực tuyến mở cơ hội làm việc trong lĩnh vực kinh doanh qua môi trường trực tuyến, bao gồm cả quản lý website và chiến lược tiếp thị trực tuyến.
+
+# Thủ tục giấy tờ tuyển sinh
+  utter_xem_ket_qua_thi:
+  - text: |
+      Cách xem điểm thi THPT Quốc gia thông qua website của Bộ Giáo dục và Đào tạo cụ thể như sau: 
+      Bước 1: Truy cập vào cổng thi THPT của Bộ Giáo dục và Đào tạo: http://thisinh.thithptquocgia.edu.vn/ 
+      Bước 2: Bạn nhập đầy đủ thông tin yêu cầu: căn cước công dân, mã đăng nhập,… để xác nhận. 
+      Bước 3: Đăng nhập và xem kết quả thi. Kết quả thi sẽ hiện ra khi bạn hoàn thành các bước trên. 
+      Bạn có thể xem điểm thi đánh giá năng lực 2023 của Đại học Quốc gia TP.HCM tại: https://thinangluc.vnuhcm.edu.vn/.
+      Bạn có thể xem điểm thi đánh giá năng lực Đại học Quốc gia Hà Nội 2023 tại: http://khaothi.vnu.edu.vn/
+
+  utter_giay_to_nhap_hoc:
+  - text: |
+      Hồ sơ nhập học đại học thường gồm các loại giấy tờ sau:
+      - Bản chính Giấy báo nhập học.
+      - Sơ yếu lý lịch học sinh có chứng thực.
+      - Giấy chứng nhận tốt nghiệp trung học phổ thông tạm thời hoặc bằng tốt nghiệp trung học phổ thông.
+      - Học bạ trung học phổ thông.
+      - Căn cước công dân/Chứng minh nhân dân.
+      - Bản sao Giấy khai sinh.
+      - Phiếu khám sức khỏe do phòng khám quận, huyện cấp.
+      - Hồ sơ, giấy chứng nhận ưu đãi.
+      - Ảnh thẻ 3x4 (chuẩn bị khoảng 04 - 06 ảnh).
+      - Bản sao Giấy chứng nhận đăng ký Nghĩa vụ quân sự và Giấy xác nhận đăng ký vắng mặt (đối với nam).
+      Nếu thuộc các đối tượng được miễn, giảm học phí, hỗ trợ chi phí học tập, học sinh cần chuẩn bị thêm các giấy phù hợp.
+
+  utter_giay_to_giam_hoc_phi:
+  - text: |
+      Nếu thuộc các đối tượng được miễn, giảm học phí, hỗ trợ chi phí học tập, học sinh cần chuẩn bị các giấy tờ sau:
+      - Đơn đề nghị miễn, giảm học phí và hỗ trợ chi phí học tập, hỗ trợ tiền đóng học phí.
+      - Bản sao chứng thực hoặc bản sao kèm theo bản chính để đối chiếu hoặc bản sao từ sổ gốc các giấy tờ chứng minh thuộc đối tượng miễn, giảm học phí đối với các đối tượng sau:
+      - Miễn học phí Giấy xác nhận khuyết tật do Ủy ban nhân dân (UBND) xã cấp hoặc Quyết định về việc trợ cấp xã hội của Chủ tịch UBND cấp huyện đối với đối tượng sinh viên khuyết tật.
+      - Giấy chứng nhận được hưởng chế độ miễn học phí theo quy định tại Nghị định số 27/2016/NĐ-CP đối với thân nhân của hạ sĩ quan, binh sĩ tại ngũ.
+      - Giấy khai sinh và giấy xác nhận hộ nghèo hoặc hộ cận nghèo do UBND xã cấp cho sinh viên người dân tộc thiểu số có cha hoặc mẹ hoặc cả cha mẹ hoặc ông bà (trong trường hợp ở với ông bà) thuộc hộ nghèo và hộ cận nghèo; sinh viên người dân tộc rất ít người.
+      - Giấy khai sinh và sổ hộ khẩu thường trú hoặc xác nhận của cơ quan công an về việc đăng ký thường trú (trường hợp sổ hộ khẩu bị thất lạc) đối với sinh viên người dân tộc thiểu số rất ít người.
+  
+  utter_xet_tuyen_bo_sung:
+  - text: |
+      Thông tin về kỳ thi bổ sung:
+      a) Xét tuyển bổ sung có thể được thực hiện một lần hay nhiều lần;
+      b) Căn cứ chỉ tiêu tuyển sinh của trường và số thí sinh trúng tuyển đã xác nhận nhập học tại trường sau xét tuyển đợt 1.
+      c) Các trường thông báo điều kiện xét tuyển bổ sung, điểm nhận hồ sơ xét tuyển bổ sung không được thấp hơn điểm trúng tuyển đợt 1; công bố lịch xét tuyển;
+      d) Thí sinh chưa trúng tuyển hay đã trúng tuyển mà chưa xác nhận nhập học vào bất cứ trường nào có thể thực hiện ĐKXT bổ sung trực tuyến hoặc theo phương thức khác do trường quy định;
+      đ) Kết thúc mỗi đợt xét tuyển, trường công bố trên trang thông tin điện tử của trường và trên phương tiện thông tin đại chúng về điểm trúng tuyển, danh sách thí sinh trúng tuyển;
+      e) Thí sinh xác nhận nhập học trong thời hạn quy định, bằng phương thức trực tuyến hoặc theo quy định của từng trường;
+      Lưu ý: Chương trình học hay học phí đều tương tự đợt xét tuyển thường.
+  
+  utter_xet_mot_nganh_cho_nhieu_khoi:
+  - text: Hoàn toàn được. Điểm trúng tuyển của các tổ hợp môn thi/bài thi trong cùng một ngành là bằng nhau. Bạn chỉ trúng tuyển vào 1 nguyện vọng ưu tiên cao nhất trong danh sách các nguyện vọng đã đăng ký.
+  
+  utter_quy_che_tuyen_sinh:
+  - text: |
+      Quy chế tuyển sinh đại học và cao đẳng tại Việt Nam thường do Bộ Giáo dục và Đào tạo quy định và giám sát. Một số thông tin có trong quy chế tuyển sinh:
+      1. Kỳ Thi Đánh Giá Năng Lực
+      2. Điểm Chuẩn và Xét Tuyển
+      3. Xét Tuyển Thông Qua Hồ Sơ
+      4. Chính sách ưu tiên
+      5. Học Bổng và Hỗ Trợ Tài Chính
+      6. Hướng Dẫn Đăng Ký và Đăng Nhập Hồ Sơ
+
+  utter_dk_thi_nang_luc:
+  - text: |
+      Bạn có thể đăng ký dự thi kì thi đánh giá năng lực trực tuyến hoặc qua bưu điện. Để đăng ký trực tuyến, bạn cần truy cập vào trang web của kỳ thi và đăng ký tài khoản. Sau đó, bạn cần nhập đầy đủ thông tin cá nhân và cập nhật hồ sơ dự thi. Tiếp theo, bạn có thể chọn ca thi và thanh toán lệ phí thi. Cuối cùng, bạn có thể tra cứu thông tin và in phiếu dự thi. Nếu bạn muốn đăng ký qua bưu điện, bạn cần tải phiếu đăng ký dự thi đánh giá năng lực và điền đầy đủ các thông tin yêu cầu. Sau đó, bạn gửi phiếu đăng ký và các giấy tờ cần thiết đến địa chỉ được công bố trên trang web của kỳ thi.
+  
+  utter_gioi_thieu_ve_diem_uu_tien:
+  - text: |
+      Điểm ưu tiên là mức điểm được Nhà nước ưu ái dành cho các học sinh, đặc biệt là những học sinh thuộc những trường hợp đặc biệt hoặc một số khu vực được quy định. Điểm ưu tiên được cộng thêm vào số điểm thi thực tế mà thí sinh đã đạt được trong kỳ thi của mình. Tuy nhiên, không phải học sinh nào cũng được cộng điểm ưu tiên mà chỉ những trường hợp được thuộc diện quy định của pháp luật. Với điểm ưu tiên, thí sinh sẽ có cơ hội cao hơn trong các kỳ thi như: kỳ thi tốt nghiệp THPT quốc gia, xét tuyển vào các trường Đại học, Cao đẳng trên cả nước.
+  
+  utter_chi_tiet_ve_diem_uu_tien:
+  - text: |
+      1. Điểm ưu tiên là mức điểm thí sinh thuộc diện đặc biệt được cộng thêm vào số điểm thi thực tế. Đây là căn cứ để các đơn vị giáo dục thực hiện việc xét tuyển. Có 2 loại điểm ưu tiên bao gồm: Điểm ưu tiên theo khu vực và điểm ưu tiên theo đối tượng.
+
+      2. Quy định về điểm ưu tiên khi thi xét tuyển Đại học 2023:
+      - Chính sách cộng điểm ưu tiên Đại học 2023 theo khu vực
+
+      Theo Quy chế tuyển sinh Đại học 2022, chính sách cộng điểm ưu tiên được quy định cụ thể như sau:
+      Đối tượng thuộc khu vực 1 (KV1) được cộng 0,75 điểm: Bao gồm các xã đặc biệt khó khăn thuộc vùng sâu vùng xa, vùng dân tộc thiểu số, miền núi, biên giới và hải đảo; các xã an toàn khu vào diện đầu tư của Chương trình 135 theo quy định của Thủ tướng Chính phủ.
+      Khu vực 2 (KV2) được cộng 0,25 điểm: Các huyện và thị xã ngoại thành của thành phố trực thuộc Trung ương hoặc thành phố trực thuộc tỉnh, ngoại trừ các địa phương thuộc KV1.
+      Khu vực 3 (KV3) không được cộng điểm ưu tiên: Bao gồm các quận trong nội thành của thành phố trực thuộc trung ương.
+      Khu vực 2 nông thôn (KV2-NT) được cộng 0,5 điểm: Các địa phương không thuộc KV1, KV2, KV3.
+
+      - Chính sách cộng điểm ưu tiên Đại học 2022 theo đối tượng chính sách
+      Có 2 nhóm đối tượng ưu tiên bao gồm: Ưu tiên 1 (ƯT1) và Ưu tiên 2 (ƯT2).
+
+      Nhóm ƯT1 được cộng 2 điểm, bao gồm:
+      Công dân Việt Nam là người dân tộc thiểu số có nơi thường trú trong thời gian học THPT hoặc trung cấp trên 18 tháng tại KV1.
+      Công nhân trực tiếp sản xuất đã làm việc liên tục 5 năm trở lên, trong đó tối thiểu 2 năm là chiến sĩ thi đua cấp tỉnh được công nhận và được nhận giấy khen.
+      Đối tượng là thương binh, bệnh binh, người có giấy chứng nhận được hưởng chính sách như thương binh.
+      Những người là sĩ quan, hạ sĩ quan, chiến sĩ nghĩa vụ phục vụ trong Công an nhân dân tại ngũ có thời gian phục vụ từ 12 tháng trở lên đối với KV1, 18 tháng trở lên tại các khu vực còn lại hoặc đã hoàn thành nghĩa vụ phục vụ theo quy định.
+      Đối tượng là con của thương binh liệt sĩ, con của người hoạt động kháng chiến bị nhiễm chất độc màu da cam và bị suy giảm khả năng lao động từ 81% trở lên. Những người là con của người hoạt động kháng chiến bị dị tật, dị dạng do chất độc hóa học và đang được nhận trợ cấp hàng tháng.
+      Đối tượng là của con Anh hùng Lực lượng vũ trang nhân dân hoặc Anh hùng lao động trong thời kỳ kháng chiến.
+
+      Nhóm ƯT2 được cộng 1 điểm, bao gồm:
+      Đối tượng là thanh niên xung phong được cử đi học.
+      Những người là sĩ quan, hạ sĩ quan, chiến sĩ nghĩa vụ phục vụ trong Công an nhân dân tại ngũ có thời gian phục vụ từ 12 tháng trở lên đối với KV1, 18 tháng trở lên tại các khu vực còn lại.
+      Chỉ huy trưởng, chỉ huy phó ban chỉ huy quân sự xã, phường, thị trấn; những người là trưởng thôn, trung đội trưởng dân quân tự vệ. Dân quân tự vệ đã hoàn thành tham gia thực hiện nghĩa vụ Dân quân tự vệ từ 12 tháng trở lên, dự thi vào ngành Quân sự cơ sở. Lưu ý thời hạn tối đa được hưởng chế độ cộng điểm ưu tiên là 18 tháng kể từ ngày ký quyết định xuất ngũ đến ngày đăng ký xét tuyển.
+      Công dân Việt Nam là người dân tộc thiểu số có nơi thường trú tại nơi ngoài khu vực của đối tượng thuộc nhóm ƯT1.
+      Người khuyết tật nặng được cơ quan có thẩm quyền xác nhận.
+      Giáo viên đã giảng dạy tối thiểu 3 năm tại các cơ sở giáo dục đăng ký dự tuyển vào các ngành đào tạo giáo viên.
+      Những người là y tá, hộ lý, dược tá, điều dưỡng viên,... có bằng trung cấp Dược tá đã công tác tối thiểu 3 năm đăng ký dự tuyển vào các ngành có liên quan đến chuyên môn.
+
+      3. Cách tính điểm ưu tiên thi Đại học 2023
+
+      Năm 2023 là năm đầu tiên áp dụng cách tính điểm ưu tiên mới trong kỳ thi THPT quốc gia, xét tuyển Đại học, Cao đẳng, cụ thể:
+      Điểm ưu tiên thí sinh được hưởng = [(30 - tổng điểm đạt được của thí sinh)/7,5] x Tổng điểm ưu tiên được xác định thông thường.
+      Đối với thí sinh có điểm thực tế từ 22,5 trở lên (tính theo thang 10 điểm và tổng điểm 3 môn tối đa là 30) sẽ giảm dần đến 0 khi thí sinh đạt số điểm thi thực tế tổng 3 môn là 30 điểm.
+      Áp dụng công thức ở trên:
+      Thí sinh thuộc đối tượng khu vực 1 thi thực tế đạt 22,5 trở xuống thì được cộng 0,75 điểm ưu tiên khu vực. Trường hợp đạt 27 điểm thực tế thì điểm ưu tiên chỉ còn là 0,3; và 29 điểm chỉ còn 0,1 điểm ưu tiên khu vực.'''
+  
+  utter_diem_uu_tien_co_tinh_vao_xet_hoc_ba:
+  - text: Xét học bạ được là hình thức xét tuyển đại học phổ biến hiện nay. Trong phương thức xét tuyển Đại học 2022 theo quy định của Bộ giáo dục và đào tạo, xét tuyển học bạ vẫn sẽ được cộng điểm ưu tiên.
+  
+  utter_doi_nguyen_vong:
+  - text: |
+      Cách thay đổi nguyện vọng Đại học sau khi biết điểm năm 2023 được tiến hành như sau:
+
+      Bước 1: Truy cập vào địa chỉ http://thisinh.thithptquocgia.edu.vn và đăng nhập bằng tài khoản được Bộ GD&ĐT cấp trước đó khi đăng ký dư thi THPT.
+
+      Bước 2: Bấm vào thanh Menu và chọn mục Thay đổi nguyện vọng đăng ký xét tuyển sinh.
+
+      Bước 3: Tại đây, cửa sổ hiển thị thông tin thí sinh đã đăng ký trước đó. Sau đó, bấm vào mục Chỉnh sửa nguyện vọng để thay đổi nguyện vọng mong muốn.
+
+      Bước 4: Thí sinh tiến hành thay đổi nguyện vọng và lần lượt lựa chọn: Trường, ngành, tổ hợp môn
+
+      Bước 5: Sau khi nhập thông tin thay đổi nguyện vọng, thí sinh chọn vào mục lưu thông tin để cập nhật nguyện vọng đã thay đổi.
+
+      Bước 6: Hệ thống sẽ gửi mã OTP về số điện thoại, hãy nhập chính xác mã được gửi. Cuối cùng, thí sinh nhấn vào mục Xác nhận đăng ký.
+
+      Bước 7: Hệ thống sẽ bắt buộc thí sinh xác nhận thêm một lần nữa. Nhấn vào OK để xác nhận, muốn hủy bỏ bạn nhấn vào Cancel.
+
+      Bạn có thể tìm hiểu thêm tại đây: https://thuvienphapluat.vn/hoi-dap-phap-luat/839CE95-hd-cach-thay-doi-nguyen-vong-dai-hoc-sau-khi-biet-diem-nam-2023-thoi-gian-thay-doi-nguyen-vong-dai-hoc.html
+
+      Bạn có muốn biết thêm thông tin khác về việc đổi nguyện vọng đại học không?
+  
+  utter_giay_to_can_de_du_thi:
+  - text: |
+      Các giấy tờ cần chuẩn bị khi tham gia kỳ thi THPT quốc gia bao gồm:
+      - Phiếu đăng ký dự thi.
+      - Bằng tốt nghiệp THPT (bản sao có công chứng).
+      - Giấy khai sinh.
+      - Giấy xác nhận kết quả học tập của lớp 11 và 12.
+      - Ảnh 3x4 (2 bản).
+      - Chứng minh nhân dân/ Căn cước công dân.
+      - Các giấy chứng nhận hợp lệ để được hưởng chế độ ưu tiên, khuyến khích (nếu có) 
+  
+  utter_dieu_kien_tham_gia_tuyen_sinh:
+  - text: |
+      đIỀU KIỆN THAM GIA TUYỂN SINH
+
+
+actions:
+- utter_tu_van_tuyen_sinh
+- utter_chao_hoi
+- utter_gioi_thieu
+- utter_tam_biet
+- utter_gt_dtkmt
+- utter_hoc_bong
+- utter_nganh_dao_tao
+- action_default_fallback
+- utter_xet_tuyen_bo_sung
+- utter_dieu_kien_tham_gia_tuyen_sinh
+- utter_giay_to_can_de_du_thi
+- utter_doi_nguyen_vong
+- utter_diem_uu_tien_co_tinh_vao_xet_hoc_ba
+- utter_chi_tiet_ve_diem_uu_tien
+- utter_gioi_thieu_ve_diem_uu_tien
+- utter_dk_thi_nang_luc
+- utter_quy_che_tuyen_sinh
+- utter_xet_mot_nganh_cho_nhieu_khoi
+- utter_giay_to_giam_hoc_phi
+- utter_giay_to_nhap_hoc
+- utter_xem_ket_qua_thi
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

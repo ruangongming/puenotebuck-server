@@ -1,0 +1,77 @@
+version: "2.0"
+
+
+stories:
+  - story: story_1
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: nganh_dao_tao
+      - action: utter_nganh_dao_tao
+
+  - story: story_2
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: chuong_trinh_dao_tao
+      - action: utter_chuong_trinh_dao_tao
+      - intent: hoc_phi
+      - action: utter_hoc_phi
+      - intent: tu_van_tuyen_sinh
+      - action: utter_tu_van_tuyen_sinh
+      - intent: tam_biet
+      - action: utter_tam_biet
+
+  - story: gioi_thieu
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: gioi_thieu
+      - action: utter_gioi_thieu
+
+
+
+  - story: chuong trinh dao tao
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: chuong_trinh_dao_tao
+      - action: utter_chuong_trinh_dao_tao
+      - intent: tam_biet
+      - action: utter_tam_biet
+
+  - story: hoc phi
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: tam_biet
+      - action: utter_tam_biet
+
+  - story: phuong thuc tuyen sinh
+    steps:
+      - intent: chao_hoi
+      - action: utter_chao_hoi
+      - intent: tu_van_tuyen_sinh
+      - action: utter_tu_van_tuyen_sinh
+      - intent: tam_biet
+      - action: utter_tam_biet
+
+  - story: chuong trinh dao tao_1
+    steps:
+      - intent: chuong_trinh_dao_tao
+      - action: utter_chuong_trinh_dao_tao
+      - intent: tam_biet
+      - action: utter_tam_biet
+
+  - story: phuong thuc tuyen sinh_1
+    steps:
+      - intent: tu_van_tuyen_sinh
+      - action: utter_tu_van_tuyen_sinh
+      - intent: tam_biet
+      - action: utter_tam_biet
+
+  - story: interactive_story_1
+    steps:
+    - intent: chao_hoi
+    - action: utter_chao_hoi
+    - intent: hoc_bong
